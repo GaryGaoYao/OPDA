@@ -2,9 +2,9 @@
 
 <br>
 
-# 🦾 OPDA
+# 🦾 
 
-### Orbital PSI Design Agent
+### OPDA: Orbital PSI Design Agent
 
 **Human-supervised agentic AI for point-of-care design of patient-specific orbital implants**
 
