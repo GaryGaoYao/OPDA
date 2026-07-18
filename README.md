@@ -166,62 +166,54 @@ flowchart TD
 ## How to Use OPDA
 > 📚 **Tutorial book:** Coming soon (Pending release) <br>
 > 🎬 **Tutorial Video:** Coming soon (Pending release) <br>
-> 
+
+## 🌍 Global Collaboration
+
+OPDA welcomes collaboration with clinicians, researchers, engineers, hospitals, and manufacturing partners worldwide.
+
+We are particularly interested in:
+
+* 🧑‍⚕️ Clinical and multi-centre validation
+* 🤖 Agentic AI for surgical workflows
+* 🦴 Patient-specific implant design
+* 🩻 Craniofacial image analysis
+* 📐 Statistical shape modelling
+* 🖨️ Medical 3D printing
+* 🧪 Prospective and in vivo evaluation
+
+<p align="center">
+  <b>Interested in collaborating with OPDA?</b><br>
+  <a href="#contact">📬 Contact us to discuss potential opportunities</a>
+</p>
 
 ---
 <a id="evaluation-highlights"></a>
 
 ## Evaluation Highlights
-<div align="center" style="width: 100%; text-align: center; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased;">
-  <table width="100%" style="width: 100%; border-collapse: separate; border-spacing: 18px; margin: 0 auto; table-layout: fixed;">
-    <tr>
-      <!-- 卡片 1 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px 20px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; text-align: center;">💀 Multi-Centre Validation</div>
-        <div style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.03em; text-align: center;">168 assemblies · 15 units</div>
-        <div style="font-size: 12.5px; color: #64748b; font-weight: 400; text-align: center;">Printed PSI–skull evaluation</div>
-      </td>
-      <!-- 卡片 2 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px 20px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; text-align: center;">⭐ Expert Usability</div>
-        <div style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.03em; text-align: center;">3.88 / 5</div>
-        <div style="font-size: 12.5px; color: #64748b; font-weight: 400; text-align: center;">Mean multi-centre usability score</div>
-      </td>
-      <!-- 卡片 3 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px 20px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; text-align: center;">⚡ Design Efficiency</div>
-        <div style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.03em; text-align: center;">9.03 min · USD 1.91</div>
-        <div style="font-size: 12.5px; color: #64748b; font-weight: 400; text-align: center;">Mean time and estimated cost per case</div>
-      </td>
-    </tr>
-    <tr>
-      <!-- 卡片 4：针对核心增长指标做了柔和的高亮高质感微调 -->
-      <td align="center" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 16px; padding: 32px 20px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 11px; font-weight: 700; color: #166534; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; text-align: center;">📈 Memory Adaptation</div>
-        <div style="font-size: 24px; font-weight: 800; color: #15803d; margin-bottom: 8px; letter-spacing: -0.03em; text-align: center;">55% → 81%</div>
-        <div style="font-size: 12.5px; color: #166534; font-weight: 400; opacity: 0.85; text-align: center;">First-pass acceptance after adaptation</div>
-      </td>
-      <!-- 卡片 5 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px 20px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; text-align: center;">📐 Segmentation</div>
-        <div style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.03em; text-align: center;">Dice 0.93 ± 0.03</div>
-        <div style="font-size: 12.5px; color: #64748b; font-weight: 400; text-align: center;">HD95: 2.62 ± 0.51 mm</div>
-      </td>
-      <!-- 卡片 6 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px 20px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; text-align: center;">👁️ Orbital Prediction</div>
-        <div style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 8px; letter-spacing: -0.03em; text-align: center;">0.65 mm</div>
-        <div style="font-size: 12.5px; color: #64748b; font-weight: 400; text-align: center;">Internal mean surface distance</div>
-      </td>
-    </tr>
-  </table>
 
-  <!-- 底部注脚微调 -->
-  <p align="center" style="margin-top: 20px; font-size: 12px; color: #94a3b8; letter-spacing: 0.02em; text-align: center;">
-    <i>Results reflect performance in the evaluated research setting.</i>
-  </p>
+<p align="center">
 
-</div>
+<img src="https://img.shields.io/badge/Multi--Centre%20Validation-168%20Assemblies%20%C2%B7%2015%20Units-2563EB?style=for-the-badge" alt="Multi-centre validation">
+
+<img src="https://img.shields.io/badge/Expert%20Usability-3.88%20%2F%205-7C3AED?style=for-the-badge" alt="Expert usability">
+
+<img src="https://img.shields.io/badge/Design%20Efficiency-9.03%20min%20%C2%B7%20USD%201.91-D97706?style=for-the-badge" alt="Design efficiency">
+
+<br>
+
+<img src="https://img.shields.io/badge/Memory%20Adaptation-55%25%20%E2%86%92%2081%25-15803D?style=for-the-badge" alt="Memory adaptation">
+
+<img src="https://img.shields.io/badge/Segmentation-Dice%200.93%20%C2%B1%200.03-0891B2?style=for-the-badge" alt="Segmentation performance">
+
+<img src="https://img.shields.io/badge/Orbital%20Prediction-0.65%20mm-475569?style=for-the-badge" alt="Orbital prediction accuracy">
+
+</p>
+
+<p align="center"> <sub><i>These results represent preclinical performance in the evaluated research setting.</i></sub> </p>
+
+> [!NOTE]
+> 🧪 Current metrics reflect **preclinical evaluation**.
+> 📊 Additional results will be released progressively, including prospective and **in vivo validation** of design accuracy, usability, safety, and clinical outcomes.
 
 ---
 
@@ -569,7 +561,7 @@ OPDA brings together clinicians, biomedical engineers, computer scientists, and 
         </div>
         <!-- Institutional Affiliations -->
         <div style="font-size: 14px; color: #475569; font-weight: 500; margin-bottom: 4px; text-align: center;">Department of Oral and Maxillofacial Surgery</div>
-        <div style="font-size: 13.5px; color: #64748b; margin-bottom: 18px; text-align: center;">KU Leuven / University Hospitals Leuven · Leuven, Belgium</div>
+        <div style="font-size: 13.5px; color: #64748b; margin-bottom: 18px; text-align: center;">KU Leuven / UZ Leuven · Leuven, Belgium</div>
         <!-- Premium Minimalist Link -->
         <div style="text-align: center;">
           <a href="mailto:yao.gao@kuleuven.be" style="font-size: 14.5px; color: #2563eb; text-decoration: none; font-weight: 600; border-bottom: 1px dashed #2563eb; padding-bottom: 2px;">yao.gao@kuleuven.be</a>
@@ -589,15 +581,15 @@ OPDA brings together clinicians, biomedical engineers, computer scientists, and 
       <!-- Supervisor 1 -->
       <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 16px; text-align: center; vertical-align: middle;">
         <div style="font-size: 16.5px; font-weight: 700; color: #0f172a; margin-bottom: 8px; text-align: center;">Robin Willaert</div>
-        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>University Hospitals Leuven</div>
+        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>UZ Leuven</div>
         <div style="text-align: center;">
-          <a href="mailto:robin.willaert@uzleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">robin.willaert@uzleuven.be</a>
+          <a href="mailto:robin.willaert@uzleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">robin.willaert@kuleuven.be</a>
         </div>
       </td>
       <!-- Supervisor 2 -->
       <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 16px; text-align: center; vertical-align: middle;">
         <div style="font-size: 16.5px; font-weight: 700; color: #0f172a; margin-bottom: 8px; text-align: center;">Jeroen Van Dessel</div>
-        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>University Hospitals Leuven</div>
+        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>UZ Leuven</div>
         <div style="text-align: center;">
           <a href="mailto:jeroen.vandessel@kuleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">jeroen.vandessel@kuleuven.be</a>
         </div>
@@ -605,7 +597,7 @@ OPDA brings together clinicians, biomedical engineers, computer scientists, and 
       <!-- Supervisor 3 -->
       <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 16px; text-align: center; vertical-align: middle;">
         <div style="font-size: 16.5px; font-weight: 700; color: #0f172a; margin-bottom: 8px; text-align: center;">Yi Sun</div>
-        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>University Hospitals Leuven</div>
+        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>UZ Leuven</div>
         <div style="text-align: center;">
           <a href="mailto:yi.sun@uzleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">yi.sun@uzleuven.be</a>
         </div>
