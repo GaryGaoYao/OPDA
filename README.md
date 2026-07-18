@@ -2,7 +2,7 @@
 
 <br>
 
-# 🦾 
+# <img width="332.4" height="228.4" alt="logo" src="https://github.com/user-attachments/assets/2c4512c1-31dc-4459-b7f6-573d5f10deac" />
 
 ### OPDA: Orbital PSI Design Agent
 
@@ -31,152 +31,134 @@
 
 ## Overview
 
-**OPDA** is a human-supervised agentic AI system for the design of patient-specific implants used in orbital fracture reconstruction.
+**OPDA** is a human-supervised AI agent system that designs patient-specific implants for orbital fracture reconstruction. 
 
-It combines specialized AI agents, multimodal foundation models, statistical shape modelling, and deterministic geometry-processing tools in one coordinated workflow:
+### 🔄 End-to-End Workflow
+**Instruction** ➔ **Anatomical Reconstruction** ➔ **Orbital Prediction** ➔ **Implant Design** ➔ **Expert Review** ➔ **Manufacturing**
 
-**clinical instruction → anatomical reconstruction → orbital prediction → implant design → expert review → manufacturing preparation**
-
-Unlike a single end-to-end model, OPDA decomposes the task into interpretable steps, selects dedicated tools for each step, checks intermediate outputs, and revises the implant according to expert feedback.
+### ✨ Key Features
+* **Hybrid Core:** Integrates multimodal foundation models, statistical shape modeling, and deterministic geometry tools.
+* **Interpretable Steps:** Unlike black-box end-to-end models, OPDA decomposes tasks, verifies intermediate outputs, and utilizes dedicated tools.
+* **Human-in-the-Loop:** Continuously refines and revises implant geometry based on expert feedback.
 
 > [!IMPORTANT]
-> OPDA is a research prototype. It does not independently diagnose patients, determine treatment indications, or replace clinical and engineering review.
+> **Research Prototype Only.** OPDA does not independently diagnose patients, determine treatment, or replace professional clinical and engineering review.
 
 ---
 
-## At a Glance
+<div align="center">
 
-<table>
+## 📊 At a Glance
+
+<table width="100%" cellpadding="8">
 <tr>
-<td align="center" width="25%">
-<h3>168</h3>
-Printed PSI–skull assemblies
+
+<td align="center" valign="middle" width="18%">
+<h3>🦴&nbsp;168</h3>
+<sub>
+<b>Printed&nbsp;assemblies</b><br>
+15 clinical units
+</sub>
 </td>
-<td align="center" width="25%">
-<h3>15</h3>
-Participating clinical units
+
+<td align="center" valign="middle" width="18%">
+<h3>⚡&nbsp;9.03&nbsp;min</h3>
+<sub>
+<b>Mean&nbsp;design&nbsp;time</b><br>
+per implant
+</sub>
 </td>
-<td align="center" width="25%">
-<h3>9.03 min</h3>
-Mean design time
+
+<td align="center" valign="middle" width="20%">
+<h3>💰&nbsp;USD&nbsp;1.91</h3>
+<sub>
+<b>Estimated&nbsp;design&nbsp;cost</b><br>
+per implant
+</sub>
 </td>
-<td align="center" width="25%">
-<h3>3.88 / 5</h3>
-Mean usability score
+
+<td align="center" valign="middle" width="18%">
+<h3>⭐&nbsp;3.88&nbsp;/&nbsp;5</h3>
+<sub>
+<b>Usability&nbsp;score</b><br>
+expert assessment
+</sub>
 </td>
-</tr>
-<tr>
-<td align="center">
-<h3>55% → 81%</h3>
-First-pass acceptance
+
+<td align="center" valign="middle" width="26%">
+<h3>📈&nbsp;55%&nbsp;→&nbsp;81%</h3>
+<sub>
+<b>First-pass&nbsp;acceptance</b><br>
+after local adaptation
+</sub>
 </td>
-<td align="center">
-<h3>USD 1.91</h3>
-Estimated cost per case
-</td>
-<td align="center">
-<h3>0.93</h3>
-Segmentation Dice score
-</td>
-<td align="center">
-<h3>0.65 mm</h3>
-Orbital prediction error
-</td>
+
 </tr>
 </table>
 
-<sub>
-Results were obtained in the evaluated research setting and should not be interpreted as guaranteed performance across institutions, scanners, patient populations, or manufacturing environments.
-</sub>
+<sub><i>Results reflect the evaluated research setting.</i></sub>
+
+</div>
 
 ---
-
 ## Why OPDA?
 
-Conventional orbital implant design may require several software packages, repeated surgeon–engineer communication, extensive manual mesh editing, and hours of specialist work.
+Traditional orbital implant design is fragmented, manual, and slow. **OPDA unifies this process into a coordinated, human-supervised AI workflow.**
 
-OPDA transforms this fragmented process into a coordinated agentic workflow.
-
-<table>
+<table width="100%">
 <tr>
-<td width="33%" valign="top">
-
-### 💬 Clinical interaction
-
-Clinicians describe design intent using natural language rather than manually operating every geometry-processing function.
-
-</td>
-<td width="33%" valign="top">
-
-### 🧠 Agentic orchestration
-
-Specialized agents plan tasks, invoke deterministic tools, inspect intermediate outputs, and request revision when needed.
-
-</td>
-<td width="33%" valign="top">
-
-### 🧑‍⚕️ Human control
-
-Experts approve segmentation, orbital prediction, implant geometry, fixation strategy, and the final manufacturing handoff.
-
-</td>
+<td align="center" width="33%"><b>💬 Clinical Interaction</b><br><small>Translates natural language into structured design actions.</small></td>
+<td align="center" width="34%"><b>🧠 Agentic Orchestration</b><br><small>Specialized agents plan, execute, and iterate automatically.</small></td>
+<td align="center" width="33%"><b>🧑‍⚕️ Human Oversight</b><br><small>Experts retain control over design, fixation, and release.</small></td>
 </tr>
 </table>
+
+<p align="center"><b>Intent</b> ➔ <b>Planning</b> ➔ <b>Execution</b> ➔ <b>Approval</b></p>
 
 ---
 
 ## System Architecture
 
 ```mermaid
-flowchart LR
-    A["Clinical instruction"] --> O["OPDA Orchestrator"]
+flowchart TD
+    A["Clinical Instruction"] --> O["OPDA Orchestrator"]
 
+    %% 5条纵向并行的流水线 (通过 \n 换行控制方框宽度)
     O --> M["Mesh Agent"]
+    M --> M1["CT Retrieval"] --> M2["Segmentation"] --> M3["Mesh\nGeneration"] --> H
+
     O --> S["Spatial Aligner"]
+    S --> S1["Landmark\nLocalization"] --> S2["Spatial\nRegistration"] --> H
+
     O --> P["Mesh Predictor"]
+    P --> P1["Statistical\nShape Model"] --> P2["Orbital Contour\nPrediction"] --> H
+
     O --> D["Design Agent"]
+    D --> D1["Implant Base"] --> D2["Perforation"] --> D3["Fixation Holes"] --> D4["Geometry\nOptimization"] --> H
+
     O --> R["Print Agent"]
+    R --> R1["Model Checking"] --> R2["Slicing"] --> R3["Manufacturing\nHandoff"] --> H
 
-    M --> M1["CT retrieval"]
-    M --> M2["Segmentation"]
-    M --> M3["Mesh generation"]
+    %% 底部审核与流转
+    H["Expert Review"] -->|"Revise"| O
+    H -->|"Approve"| MF["Manufacturing\n"] --> SU["Surgery\n"]
 
-    S --> S1["Landmark localization"]
-    S --> S2["Spatial registration"]
-
-    P --> P1["Statistical shape model"]
-    P --> P2["Orbital contour prediction"]
-
-    D --> D1["Implant base"]
-    D --> D2["Perforation"]
-    D --> D3["Fixation holes"]
-    D --> D4["Geometry optimization"]
-
-    R --> R1["Model checking"]
-    R --> R2["Slicing"]
-    R --> R3["Manufacturing handoff"]
-
-    M3 --> H["Expert review"]
-    S2 --> H
-    P2 --> H
-    D4 --> H
-    R3 --> H
-
-    H -->|"Approve or revise"| O
-
+    %% 样式定义
     classDef input fill:#EEF2FF,stroke:#4F46E5,stroke-width:1px,color:#111827;
     classDef agent fill:#F5F3FF,stroke:#7C3AED,stroke-width:1px,color:#111827;
     classDef tool fill:#F8FAFC,stroke:#64748B,stroke-width:1px,color:#111827;
     classDef human fill:#ECFDF5,stroke:#059669,stroke-width:2px,color:#111827;
+    classDef physical fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px,color:#111827;
 
+    %% 样式应用
     class A input;
     class O,M,S,P,D,R agent;
     class M1,M2,M3,S1,S2,P1,P2,D1,D2,D3,D4,R1,R2,R3 tool;
     class H human;
+    class MF,SU physical;
 ```
 
 ---
-
 ## Core Modules
 
 | Module | Main responsibility |
@@ -188,7 +170,6 @@ flowchart LR
 | **Design Agent** | Generates the implant base and applies perforation, hollowing, fixation, clearance, and geometry operations |
 | **Print Agent** | Checks final models, prepares manufacturing files, and supports expert-reviewed fabrication handoff |
 | **Memory System** | Reuses institution-specific expert feedback without sharing patient-level data across centres |
-
 ---
 
 ## End-to-End Workflow
