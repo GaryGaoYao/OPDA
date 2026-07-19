@@ -6,8 +6,6 @@
 
 # <img width="332.4" height="228.4" alt="logo" src="https://github.com/user-attachments/assets/2c4512c1-31dc-4459-b7f6-573d5f10deac" />
 
-### **OPDA**: Orbital PSI Design Agent
-
 <br>
 
 [![Status](https://img.shields.io/badge/status-research%20prototype-F59E0B?style=for-the-badge)](#project-status)
