@@ -47,7 +47,7 @@
 
 ### ✨ Key Features
 * **Hybrid Core:** Integrates multimodal foundation models, statistical shape modeling, and deterministic geometry tools.
-* **Interpretable Steps:** Unlike black-box end-to-end models, OPDA decomposes tasks, verifies intermediate outputs, and utilizes dedicated tools.
+* **Interpretable Steps:** Unlike black-box methods, OPDA decomposes tasks, verifies intermediate outputs, and utilizes dedicated tools.
 * **Human-in-the-Loop:** Continuously refines and revises implant geometry based on expert feedback.
 
 > [!IMPORTANT]
@@ -68,8 +68,6 @@ Traditional orbital implant design is fragmented, manual, and slow. **OPDA unifi
 <td align="center" width="33%"><b>🧑‍⚕️ Human Oversight</b><br><small>Experts retain control over design, fixation, and release.</small></td>
 </tr>
 </table>
-
-<p align="center"><b>Intent</b> ➔ <b>Planning</b> ➔ <b>Execution</b> ➔ <b>Approval</b></p>
 
 ---
 
@@ -212,8 +210,9 @@ We are particularly interested in:
 <p align="center"> <sub><i>These results represent preclinical performance in the evaluated research setting.</i></sub> </p>
 
 > [!NOTE]
-> 🧪 Current metrics reflect **preclinical evaluation**.
-> 📊 Additional results will be released progressively, including prospective and **in vivo validation** of design accuracy, usability, safety, and clinical outcomes.
+> 🧪 Current metrics reflect **preclinical evaluation**. <br>
+> 📊 More experimental results are currently in progress. <br>
+> 🤝 Collaborations from around the world are warmly welcome!
 
 ---
 
@@ -473,15 +472,31 @@ OPDA was developed and evaluated using retrospective, de-identified data under i
 </table>
 
 > [!IMPORTANT]
-> Any clinical or translational deployment requires independent validation, risk assessment, regulatory review, and formal approval by the responsible institution.
+> ⚖️ **Use at Your Own Responsibility**  
+> OPDA assumes no medical or legal liability. All generated designs must be independently reviewed and approved by qualified professionals. Users must accept these terms during installation.
+
+> [!NOTE]
+> 🔑 **API Access and Availability**  
+> OPDA requires a supported API key for inference. Users should connect their own credentials. Limited trial tokens or complimentary credits may be available upon request. Availability of certain inference components may vary by region due to local service restrictions.
 
 ---
 
 <a id="citation"></a>
 
 ## Citation
-A formal citation will be added after publication.
+> 📄 **Usage Note:** <br>
+> If you use **OPDA** or any of its related modules and components in your research or project, please cite our work using the formats below.
 
+<div id="traditional-apa"></div>
+
+### APA
+```apa
+Gao, Y., et al. (2026). Agentic AI for point-of-care design of patient-specific orbital implants. Under review.
+```
+
+<div id="bibtex"></div>
+
+### BibTeX
 ```bibtex
 @article{gao_opda,
   title   = {Agentic AI for point-of-care design of patient-specific orbital implants},
@@ -542,70 +557,19 @@ OPDA brings together clinicians, biomedical engineers, computer scientists, and 
 </p>
 
 ---
-
 <a id="contact"></a>
+## 📬 Contact & Collaboration
 
-<div align="center" style="width: 100%; text-align: center; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased;">
+### 👤 Project Contact
+**Yao Gao**  
+Department of Oral and Maxillofacial Surgery  
+KU Leuven / UZ Leuven · Leuven, Belgium  
+✉️ [yao.gao@kuleuven.be](mailto:yao.gao@kuleuven.be)
 
-  <!-- Main Section Title -->
-  <h2 style="margin-bottom: 24px; font-size: 1.8em; font-weight: 700; color: #0f172a; text-align: center; letter-spacing: -0.02em;">📬 Contact</h2>
-
-  <!-- 1. Primary Contact Hero Card (Full Width) -->
-  <table width="100%" style="width: 100%; border-collapse: separate; border-spacing: 18px; margin: 0 auto; table-layout: fixed;">
-    <tr>
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 36px 24px; text-align: center; vertical-align: middle;">
-        <!-- Name & Modern Tech Badge -->
-        <div style="font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 12px; text-align: center; letter-spacing: -0.01em;">
-          👤 Yao Gao &nbsp;
-          <span style="font-size: 10.5px; font-weight: 700; color: #1d4ed8; background: #eff6ff; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.06em; vertical-align: middle;">PROJECT CONTACT</span>
-        </div>
-        <!-- Institutional Affiliations -->
-        <div style="font-size: 14px; color: #475569; font-weight: 500; margin-bottom: 4px; text-align: center;">Department of Oral and Maxillofacial Surgery</div>
-        <div style="font-size: 13.5px; color: #64748b; margin-bottom: 18px; text-align: center;">KU Leuven / UZ Leuven · Leuven, Belgium</div>
-        <!-- Premium Minimalist Link -->
-        <div style="text-align: center;">
-          <a href="mailto:yao.gao@kuleuven.be" style="font-size: 14.5px; color: #2563eb; text-decoration: none; font-weight: 600; border-bottom: 1px dashed #2563eb; padding-bottom: 2px;">yao.gao@kuleuven.be</a>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <!-- Sub-section Divider Title -->
-  <a id="supervisors"></a>
-
-<div style="font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin: 24px 0 6px 0; text-align: center;">🎓 Supervisors</div>
-
-  <!-- 2. Supervisors Grid (3 Columns, Fully Balanced) -->
-  <table width="100%" style="width: 100%; border-collapse: separate; border-spacing: 18px; margin: 0 auto; table-layout: fixed;">
-    <tr>
-      <!-- Supervisor 1 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 16px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 16.5px; font-weight: 700; color: #0f172a; margin-bottom: 8px; text-align: center;">Robin Willaert</div>
-        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>UZ Leuven</div>
-        <div style="text-align: center;">
-          <a href="mailto:robin.willaert@uzleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">robin.willaert@kuleuven.be</a>
-        </div>
-      </td>
-      <!-- Supervisor 2 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 16px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 16.5px; font-weight: 700; color: #0f172a; margin-bottom: 8px; text-align: center;">Jeroen Van Dessel</div>
-        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>UZ Leuven</div>
-        <div style="text-align: center;">
-          <a href="mailto:jeroen.vandessel@kuleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">jeroen.vandessel@kuleuven.be</a>
-        </div>
-      </td>
-      <!-- Supervisor 3 -->
-      <td align="center" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 16px; text-align: center; vertical-align: middle;">
-        <div style="font-size: 16.5px; font-weight: 700; color: #0f172a; margin-bottom: 8px; text-align: center;">Yi Sun</div>
-        <div style="font-size: 12.5px; color: #64748b; margin-bottom: 16px; line-height: 1.5; text-align: center;">KU Leuven /<br>UZ Leuven</div>
-        <div style="text-align: center;">
-          <a href="mailto:yi.sun@uzleuven.be" style="font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 500;">yi.sun@uzleuven.be</a>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-</div>
+### 🎓 Academic Supervision
+* **Prof. Dr. Robin Willaert** · KU Leuven / UZ Leuven  
+* **Dr. Jeroen Van Dessel** · KU Leuven / UZ Leuven  
+* **Dr. Yi Sun** · KU Leuven / UZ Leuven
 
 ---
 
