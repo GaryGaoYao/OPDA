@@ -6,9 +6,7 @@
 
 # <img width="332.4" height="228.4" alt="logo" src="https://github.com/user-attachments/assets/2c4512c1-31dc-4459-b7f6-573d5f10deac" />
 
-### OPDA: Orbital PSI Design Agent
-
-**Human-supervised agentic AI for point-of-care design of patient-specific orbital implants**
+### **OPDA**: Orbital PSI Design Agent
 
 <br>
 
@@ -25,10 +23,6 @@
 
 <br>
 
-> OPDA translates natural-language clinical instructions into three-dimensional orbital implant designs while keeping clinicians and biomedical engineers in control of all safety-critical decisions.
-
-<br>
-
 </div>
 
 ---
@@ -36,7 +30,7 @@
 <a id="overview"></a>
 
 ## Overview
-**OPDA** is a human-supervised AI agent system that designs patient-specific implants for orbital fracture reconstruction. 
+**OPDA** is a human-in-the-loop AI agent system that automates the design of patient-specific orbital implants. By translating natural-language clinical text into 3D anatomical shapes, OPDA accelerates the reconstruction workflow while keeping safety-critical decisions firmly under clinician control."
 
 <a id="end-to-end-workflow"></a>
 
